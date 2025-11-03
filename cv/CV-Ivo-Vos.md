@@ -35,32 +35,34 @@ Designed circular services helping IKEA achieve fully circular business by 2030.
 
 Designed and built internal AI service for NHS England helping teams find and reuse research data across the organisation, now used by 200+ researchers.
 
+
 ### Client Lead | Normally
 **2017 - 2020** | London, UK
 
-- Designed proposition and early prototype for IKEA Sustainability team that evolved into IKEA PreLoved circularity app (launched 2024)
-- Defined initial mobility service proposition and experience for VW/Porsche that launched as Cito in 2024
-- Established executive-level client relationships across enterprise programs, aligning diverse stakeholders around strategic product roadmaps
+Established executive-level client relationships across multi-project programmes, aligning stakeholders around strategic product roadmaps.
+
+Designed proposition and early prototype for IKEA Sustainability team that evolved into IKEA PreLoved circularity app (launched 2024).
+
+Defined initial mobility service proposition and experience for VW/Porsche that launched as Cito in 2024.
 
 ### Interaction Designer | Normally
 **2015 - 2017** | London, UK
 
-- Lead designer on Spotify's in-car experience exploration, working directly with Spotify product lead to design concepts that evolved into Car Thing (launched 2022)
-- Designed and prototyped product and business opportunities for enterprise clients including Facebook, Instagram, Nokia, Volkswagen, BBC and Google
-- Translated emerging technology capabilities into tangible product concepts that informed client strategic decisions
+Led product discovery for enterprise clients including Facebook, Instagram, Nokia, Volkswagen, BBC and Google.
 
+Lead designer on Spotify's in-car experience exploration, working directly with product lead to design concepts that evolved into Car Thing (launched 2022).
 
 ### Lead UX | W12 Studios
 **2012 - 2014** | London, UK
 
-- Led UX design for digital agency clients in multidisciplinary team that included brand, motion and engineering. 
-- Designed and support development for Intel of a competitor to the Apple TV.
-- Redesign for Shazam app to provide richer content discovery and update to major iOS visual update, Shazam later got acquired by Apple.
+Led UX design for digital agency clients with brand, motion and engineering teams.
+
+Designed competitor to Apple TV for Intel. Redesigned Shazam app for richer content discovery ahead of iOS visual update—later acquired by Apple.
 
 ### Interaction Designer | IDEO
 **2007 - 2012** | London, UK
 
-- Worked at world class design consultancy IDEO in their San Francisco, Palo Alto, London and Munich offices. Interaction designer and project lead on wide range of clients and industries including Maersk project redesigning shipping interfaces, more accessible banking for Barclays bank and a new customer room planning experience for IKEA.
+Interaction designer and project lead across San Francisco, Palo Alto, London and Munich offices. Clients included Maersk (shipping interfaces), Barclays (accessible banking) and IKEA (customer room planning).
 
 
 ## Education
