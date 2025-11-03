@@ -7,20 +7,20 @@
 ## Todo List
 
 ### Critical Issues (Must Fix)
-- [ ] **Fix JAAQ timeline** - Change "2025 - Present" to specific months (e.g., "Jan 2025 - Present") or reframe achievements if still in progress
-- [ ] **Clarify Normally tenure** - 10 years without promotion raises questions. Consider breaking into phases or showing progression
-- [ ] **Fix IKEA date mismatch** - Key Projects said "(2014-2015)" but it was actually during Normally period. Now fixed in Key-Projects-Impact.md but verify consistency
-- [ ] **Add specifics to W12 Studios** - Include 1-2 specific clients or impressive projects instead of generic descriptions
-- [ ] **Add specifics to IDEO** - Include 1-2 notable projects or outcomes from 5-year tenure
-- [ ] **Expand Meta contractor work** - Either add 2-3 bullets with actual work/impact, or consider removing if truly minor
-- [ ] **Complete TU Eindhoven education** - Add graduation year and clarify degree structure (integrated program or two separate degrees?)
+- [x] **Fix JAAQ timeline** - ✅ FIXED! Now shows "Jan 2025 - Present"
+- [x] **Clarify Normally tenure** - ✅ FIXED! Now split into three roles: Interaction Designer (2015-2017) → Client Lead (2017-2020) → Design Director (2020-2025)
+- [x] **Fix IKEA date mismatch** - ✅ FIXED! Key-Projects-Impact.md now shows correct dates
+- [x] **Add specifics to W12 Studios** - ✅ FIXED! Now includes Intel Apple TV competitor, Shazam redesign
+- [x] **Add specifics to IDEO** - ✅ FIXED! Now includes Maersk, Barclays, IKEA projects
+- [x] **Expand Meta contractor work** - ✅ FIXED! Removed entirely (was under Product Design Contractor 2014-2015)
+- [x] **Complete TU Eindhoven education** - ✅ FIXED! Added graduation year (2003-2006)
 
 ### Medium Priority
-- [ ] **Consider removing "What I'm Looking For"** - Good for targeted applications but might limit broad searches
-- [ ] **Tighten summary opening** - Consider leading with tactical value rather than buzzwords
-- [ ] **Add portfolio URL** - Include website link if available
-- [ ] **Add Tools & Technologies section** - List specific tools (Figma, prototyping tools, etc.), frameworks, programming languages if applicable
-- [ ] **Use month/year format** - For recent roles for better clarity (e.g., "Jan 2025 - Present")
+- [x] **Consider removing "What I'm Looking For"** - ✅ REMOVED! No longer in CV
+- [x] **Tighten summary opening** - ✅ FIXED! Now leads with tactical value: "Strategic design leader bridging AI capability with product execution"
+- [ ] **Add portfolio URL** - DEFERRED: Will add when portfolio is complete
+- [ ] **Add Tools & Technologies section** - DEFERRED: User decision not to add
+- [x] **Use month/year format** - ✅ PARTIALLY DONE: Added to JAAQ, rest kept as years only by user preference
 
 ---
 
