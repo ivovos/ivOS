@@ -7,7 +7,7 @@
 
 ## Summary
 
-Strategic design leader bridging AI capability with product execution. I move from concept to shipped product, combining deep UX expertise with technical understanding of what's actually possible. Thrive in player-coach roles defining the direction whilst building the first version.
+Strategic design leader bridging AI capability with product execution. I move from concept to shipped product, combining deep UX expertise with technical understanding of what's actually possible. Thrive in player-coach roles defining direction whilst building the first version.
 
 ---
 
@@ -16,22 +16,28 @@ Strategic design leader bridging AI capability with product execution. I move fr
 ### VP of Product Design | JAAQ
 **Jan 2025 - Present** | London, UK
 
-- Led the launch of JAAQ's mobile app (iOS and Android), delivering the full mental health content library to mobile for the first time
-- Built Talk to JAAQ Beta - an AI-powered conversation layer that helps users discover relevant mental health content by understanding their personal context
-- Established AI product strategy that kept technology in its lane: using AI for conversation and connection while surfacing real human stories rather than AI-generated advice
+Led launch of JAAQ's first mobile app (iOS and Android), delivering full mental health library to mobile.
+
+Established autonomous delivery cycles using Shape Up, moving team from waterfall to independent shipping.
+
+Defined B2B proposition using platform thinking—talk, watch, connect components work across consumer and enterprise products.
+
+Built Talk to JAAQ Beta—AI conversation layer for personalised content discovery.
 
 ### Design Director | Normally
 **2020 - 2025** | London, UK
 
-- Led studio day-to-day operations alongside Director of Strategy and Operations, managing team of 12 designers
-- Led zero-to-one AI product development, working hands-on to understand emerging technology capabilities and limitations
-- Developed early AI research tools for NHS that are now used by all 200+ researchers across the organization
-- Built conviction through making: prototyped constantly to discover what's actually possible with new technology, then aligned teams to ship meaningful products
+Led studio operations with Director of Strategy—managed 15 designers, researchers and prototypers across day-to-day delivery, hiring, ways of working and client leadership.
+
+Developed new AI and data business for IKEA from research to pilot, using data of everyday life at home. Projected €650M ARR by 2030, currently in internal development.
+
+Designed circular services helping IKEA achieve fully circular business by 2030. Work led to launch of IKEA PreLoved and office furniture subscription NorNorm.
+
+Designed and built internal AI service for NHS England helping teams find and reuse research data across the organisation, now used by 200+ researchers.
 
 ### Client Lead | Normally
 **2017 - 2020** | London, UK
 
-- Led strategic exploration of IKEA as central home interface, building agent systems and prototypes that influenced €850M investment in home data and services
 - Designed proposition and early prototype for IKEA Sustainability team that evolved into IKEA PreLoved circularity app (launched 2024)
 - Defined initial mobility service proposition and experience for VW/Porsche that launched as Cito in 2024
 - Established executive-level client relationships across enterprise programs, aligning diverse stakeholders around strategic product roadmaps
@@ -75,4 +81,3 @@ Strategic design leader bridging AI capability with product execution. I move fr
 **Product:** Product strategy, zero-to-one development, user research, rapid prototyping, shipping consumer products
 
 **Domain Experience:** Mental health & wellbeing, sustainability, healthcare, consumer products
-
