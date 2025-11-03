@@ -14,7 +14,7 @@ Strategic design leader bridging AI capability with product execution. I move fr
 ## Experience
 
 ### VP of Product Design | JAAQ
-**Jan 2025 - Present** | London, UK
+**Jan 2025 - Present**
 
 Led launch of JAAQ's first mobile app (iOS and Android), delivering full mental health library to mobile.
 
@@ -25,7 +25,7 @@ Defined B2B proposition using platform thinking—talk, watch, connect component
 Built Talk to JAAQ Beta—AI conversation layer for personalised content discovery.
 
 ### Design Director | Normally
-**2020 - 2025** | London, UK
+**2020 - 2025**
 
 Led studio operations with Director of Strategy—managed 15 designers, researchers and prototypers across day-to-day delivery, hiring, ways of working and client leadership.
 
@@ -37,7 +37,7 @@ Designed and built internal AI service for NHS England helping teams find and re
 
 
 ### Client Lead | Normally
-**2017 - 2020** | London, UK
+**2017 - 2020**
 
 Established executive-level client relationships across multi-project programmes, aligning stakeholders around strategic product roadmaps.
 
@@ -46,21 +46,21 @@ Designed proposition and early prototype for IKEA Sustainability team that evolv
 Defined initial mobility service proposition and experience for VW/Porsche that launched as Cito in 2024.
 
 ### Interaction Designer | Normally
-**2015 - 2017** | London, UK
+**2015 - 2017**
 
 Led product discovery for enterprise clients including Facebook, Instagram, Nokia, Volkswagen, BBC and Google.
 
 Lead designer on Spotify's in-car experience exploration, working directly with product lead to design concepts that evolved into Car Thing (launched 2022).
 
 ### Lead UX | W12 Studios
-**2012 - 2014** | London, UK
+**2012 - 2014**
 
 Led UX design for digital agency clients with brand, motion and engineering teams.
 
 Designed competitor to Apple TV for Intel. Redesigned Shazam app for richer content discovery ahead of iOS visual update—later acquired by Apple.
 
 ### Interaction Designer | IDEO
-**2007 - 2012** | London, UK
+**2007 - 2012**
 
 Interaction designer and project lead across San Francisco, Palo Alto, London and Munich offices. Clients included Maersk (shipping interfaces), Barclays (accessible banking) and IKEA (customer room planning).
 
@@ -72,14 +72,3 @@ Interaction designer and project lead across San Francisco, Palo Alto, London an
 
 ### Bachelor Industrial Design Engineering **2003 - 2006** | TU Eindhoven, Netherlands
 
----
-
-## Skills & Expertise
-
-**Design Leadership:** Strategic product design, cross-functional alignment, player-coach model, team building
-
-**AI/ML:** Deep technical understanding of AI tools, agent frameworks, development approaches, and real-world limitations; hands-on prototyping with emerging technology
-
-**Product:** Product strategy, zero-to-one development, user research, rapid prototyping, shipping consumer products
-
-**Domain Experience:** Mental health & wellbeing, sustainability, healthcare, consumer products
