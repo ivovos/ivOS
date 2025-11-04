@@ -17,7 +17,7 @@ IKEA had opportunity to move beyond furniture retail into home services, but nee
 Rather than just adding smart home features, we explored how IKEA's unique position (furnishing homes, understanding space, commitment to sustainability) could create genuinely new value. Used prototypes to build conviction around a long-term bet.
 
 ## The Outcome
-- **€850 million investment** in home data and services
+- **650M million investment** in home data and services
 - Created entirely new home data team to develop the vision
 - Grew IKEA's exploration team from 5 to 30 people
 - Established strategic direction that's still being developed and brought to market

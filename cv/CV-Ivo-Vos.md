@@ -19,8 +19,6 @@ Led design and launch of JAAQ’s first mobile app (iOS and Android) in partners
 
 Established autonomous delivery cycles using Shape Up, shifting the team from waterfall to independent shipping.  
 
-Defined platform approach supporting multiple products, with shared components — Talk, Watch, and Connect — powering both consumer and enterprise experiences.
-
 Defined platform approach supporting multiple products, with shared components — Talk, Watch, and Connect — powering both consumer and enterprise experiences.  
 
 Built Talk to JAAQ Beta — an AI conversation layer that personalises content discovery while preserving JAAQ’s authentic human storytelling.  
@@ -61,7 +59,7 @@ Lead designer on Spotify’s in-car experience exploration, partnering with the 
 ### Lead UX | W12 Studios  
 **2012 – 2014** 
 
-Led UX design across digital agency clients alongside brand, motion, and engineering teams, including designing a connected TV experience for Intel and redesigning the Shazam app for richer content discovery ahead of mayor iOS visual updates—later acquired by Apple.
+Led UX design across digital agency clients alongside brand, motion, and engineering teams, including designing a connected TV experience for Intel and redesigning the Shazam app for richer content discovery ahead of major iOS visual updates—later acquired by Apple.
 
 ---
 
