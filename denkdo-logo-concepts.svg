@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="'Helvetica Neue', Arial, sans-serif">
+
+  <!-- Concept 1: Clean wordmark with think/do split -->
+  <g transform="translate(100, 120)">
+    <text font-size="14" fill="#999" font-weight="500" letter-spacing="2">CONCEPT 1 — SPLIT WORDMARK</text>
+    <text y="60" font-size="48" fill="#1a1a1a" font-weight="300" letter-spacing="1">Denk</text>
+    <text x="108" y="60" font-size="48" fill="#1a1a1a" font-weight="700" letter-spacing="1">Do</text>
+    <line x1="0" y1="72" x2="165" y2="72" stroke="#1a1a1a" stroke-width="2"/>
+    <text y="92" font-size="11" fill="#666" letter-spacing="3" font-weight="400">THINK. DO.</text>
+  </g>
+
+  <!-- Concept 2: Monogram DD -->
+  <g transform="translate(500, 120)">
+    <text font-size="14" fill="#999" font-weight="500" letter-spacing="2">CONCEPT 2 — DD MONOGRAM</text>
+    <rect y="25" width="80" height="80" rx="8" fill="#1a1a1a"/>
+    <text x="40" y="78" font-size="42" fill="#ffffff" font-weight="700" text-anchor="middle" letter-spacing="-2">DD</text>
+    <text x="100" y="60" font-size="36" fill="#1a1a1a" font-weight="400" letter-spacing="1">DenkDo</text>
+    <text x="100" y="82" font-size="11" fill="#666" letter-spacing="3" font-weight="400">THINK. DO.</text>
+  </g>
+
+  <!-- Concept 3: Arrow/forward motion -->
+  <g transform="translate(100, 320)">
+    <text font-size="14" fill="#999" font-weight="500" letter-spacing="2">CONCEPT 3 — FORWARD MOTION</text>
+    <text y="60" font-size="48" fill="#1a1a1a" font-weight="400" letter-spacing="1">Denk</text>
+    <polygon points="120,38 142,50 120,62" fill="#E85D26"/>
+    <text x="150" y="60" font-size="48" fill="#1a1a1a" font-weight="700" letter-spacing="1">Do</text>
+    <text y="82" font-size="11" fill="#666" letter-spacing="3" font-weight="400">STRATEGIC DESIGN LEADERSHIP</text>
+  </g>
+
+  <!-- Concept 4: Minimal with Dutch orange accent -->
+  <g transform="translate(500, 320)">
+    <text font-size="14" fill="#999" font-weight="500" letter-spacing="2">CONCEPT 4 — DUTCH ACCENT</text>
+    <text y="60" font-size="48" fill="#1a1a1a" font-weight="400" letter-spacing="2">denk</text>
+    <text x="112" y="60" font-size="48" fill="#E85D26" font-weight="700" letter-spacing="2">do</text>
+    <circle cx="170" cy="34" r="4" fill="#E85D26"/>
+    <text y="82" font-size="11" fill="#666" letter-spacing="3" font-weight="400">THINK. DO.</text>
+  </g>
+
+</svg>
