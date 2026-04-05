@@ -3,6 +3,7 @@
 ## Language and Formatting
 - Always use UK English spelling and grammar (e.g., "personalise" not "personalize", "organisation" not "organization", "colour" not "color")
 - Use em dashes (—) for emphasis, not hyphens or double hyphens
+- Do not use asterisks (*) for bold formatting in responses — use plain text instead
 
 ## Portfolio Content Guidelines
 - Keep content concise and scannable for recruiters and clients
