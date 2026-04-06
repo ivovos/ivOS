@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasteBuildet — Brand Work I Admire</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #F5F1EB;
+      --bg-card: #EDEAE4;
+      --text: #1A1A1A;
+      --text-muted: #6B6560;
+      --accent: #3D3A36;
+      --border: #D6D1CA;
+      --tag-bg: #E2DED7;
+      --tag-active-bg: #1A1A1A;
+      --tag-active-text: #F5F1EB;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header ── */
+    .header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 24px 40px;
+    }
+
+    .header h1 {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    .header p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      line-height: 1.6;
+    }
+
+    /* ── Filters ── */
+    .filters {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .filter-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 8px 18px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    .filter-btn.active {
+      background: var(--tag-active-bg);
+      color: var(--tag-active-text);
+      border-color: var(--tag-active-bg);
+    }
+
+    /* ── Grid ── */
+    .grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 120px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      cursor: default;
+    }
+
+    .card.hidden {
+      display: none;
+    }
+
+    .card:hover .card-image {
+      transform: scale(1.03);
+    }
+
+    .card-image-wrap {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      display: block;
+    }
+
+    .card-body {
+      padding: 20px 22px 24px;
+    }
+
+    .card-studio {
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 100px;
+      background: var(--tag-bg);
+      color: var(--text-muted);
+    }
+
+    /* ── Colour blocks for card images ── */
+    .colour-block {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1.4rem;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: -0.01em;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover .colour-block {
+      transform: scale(1.03);
+    }
+
+    /* ── Empty state ── */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 80px 24px;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+      text-align: center;
+    }
+
+    .footer p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .header { padding: 48px 20px 28px; }
+      .filters { padding: 0 20px 28px; }
+      .grid {
+        padding: 0 20px 80px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>TasteBuildet</h1>
+    <p>A curated scroll of standout brand work from studios and individuals shaping consumer tech — the work I keep coming back to.</p>
+  </header>
+
+  <nav class="filters" id="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="brand-identity">Brand Identity</button>
+    <button class="filter-btn" data-filter="digital-product">Digital Product</button>
+    <button class="filter-btn" data-filter="packaging">Packaging</button>
+    <button class="filter-btn" data-filter="consumer-tech">Consumer Tech</button>
+    <button class="filter-btn" data-filter="food-bev">Food &amp; Beverage</button>
+    <button class="filter-btn" data-filter="dtc-startup">DTC &amp; Startup</button>
+    <button class="filter-btn" data-filter="interactive">Interactive &amp; Web</button>
+  </nav>
+
+  <main class="grid" id="grid">
+    <!-- Cards injected by JS -->
+  </main>
+
+  <footer class="footer">
+    <p>Curated by Ivo &middot; Inspired by the studios listed on Consumer Tech Brand Studios</p>
+  </footer>
+
+  <script>
+    const projects = [
+      // ── Nick Pattison / Primary ──
+      {
+        studio: "Nick Pattison — Primary",
+        handle: "@thenickpattison",
+        title: "Peloton Brand Sprint",
+        desc: "Award-winning brand identity work for Peloton, delivered through Primary's signature rapid sprint format — distilling the connected fitness brand's visual language.",
+        categories: ["brand-identity", "consumer-tech", "dtc-startup"],
+        colour: "#2D2D2D"
+      },
+      {
+        studio: "Nick Pattison — Primary",
+        handle: "@thenickpattison",
+        title: "Asana Rebrand",
+        desc: "Brand sprint shaping Asana's visual identity — balancing productivity software conventions with a bold, human-centred direction.",
+        categories: ["brand-identity", "digital-product", "consumer-tech"],
+        colour: "#F06A6A"
+      },
+      {
+        studio: "Nick Pattison — Primary",
+        handle: "@thenickpattison",
+        title: "Nike Design System",
+        desc: "Design work for Nike, pushing brand expression across digital touchpoints — from campaign visuals to retail identity.",
+        categories: ["brand-identity", "consumer-tech"],
+        colour: "#111111"
+      },
+
+      // ── Smith & Diction ──
+      {
+        studio: "Smith & Diction",
+        handle: "@Smith_Diction",
+        title: "Elixr Coffee Packaging",
+        desc: "Put coffee in boxes, not just bags — a unique unboxing experience for Philadelphia's speciality roaster that redefined how craft coffee shows up on the shelf.",
+        categories: ["packaging", "brand-identity", "food-bev"],
+        colour: "#5C4033"
+      },
+      {
+        studio: "Smith & Diction",
+        handle: "@Smith_Diction",
+        title: "The Rail Park Identity",
+        desc: "An ever-evolving visual identity for Philadelphia's Rail Park — growing alongside the project from concept through construction with a full suite of brand assets.",
+        categories: ["brand-identity"],
+        colour: "#4A7C59"
+      },
+      {
+        studio: "Smith & Diction",
+        handle: "@Smith_Diction",
+        title: "Living Roots Wine",
+        desc: "A flexible brand identity and playful storytelling system for Living Roots — design that honours the earth and the craft of small-batch winemaking.",
+        categories: ["brand-identity", "packaging", "food-bev"],
+        colour: "#722F37"
+      },
+
+      // ── Elan Miller / Off-Menu ──
+      {
+        studio: "Elan Miller — Off-Menu",
+        handle: "@elanmiller",
+        title: "Scale AI Brand Strategy",
+        desc: "Crafted Scale AI's new company strategy and narrative as they entered their next chapter — positioning the AI data engine for its post-Meta investment era.",
+        categories: ["brand-identity", "consumer-tech", "dtc-startup"],
+        colour: "#6C3FBF"
+      },
+      {
+        studio: "Elan Miller — Off-Menu",
+        handle: "@elanmiller",
+        title: "Rho Fintech Rebrand",
+        desc: "Brand strategy, website, OOH campaigns and coaching for Rho — transforming how the fintech platform shows up to founders and finance teams.",
+        categories: ["brand-identity", "digital-product", "dtc-startup"],
+        colour: "#1B3A5C"
+      },
+      {
+        studio: "Elan Miller — Off-Menu",
+        handle: "@elanmiller",
+        title: "Paradigm Brand Identity",
+        desc: "Brand identity for Paradigm, one of crypto's most influential investment firms — capturing the ambition of a category-defining venture fund.",
+        categories: ["brand-identity", "consumer-tech", "dtc-startup"],
+        colour: "#0D0D0D"
+      },
+
+      // ── Kevin Twohy ──
+      {
+        studio: "Kevin Twohy",
+        handle: "@kevintwohy",
+        title: "MIRROR Product Design",
+        desc: "Led all product and brand design for MIRROR — the connected fitness device — shaping strategy and direction from 0-to-1 through acquisition by Lululemon.",
+        categories: ["digital-product", "consumer-tech", "brand-identity"],
+        colour: "#1C1C1E"
+      },
+      {
+        studio: "Kevin Twohy",
+        handle: "@kevintwohy",
+        title: "The New York Times",
+        desc: "Product design for the NYT — applying sensitivity, curiosity and craft to one of the world's most important digital news experiences.",
+        categories: ["digital-product"],
+        colour: "#121212"
+      },
+      {
+        studio: "Kevin Twohy",
+        handle: "@kevintwohy",
+        title: "Everlane Digital Experience",
+        desc: "Design for Everlane's digital product — translating radical transparency into an e-commerce experience that feels as considered as the clothing.",
+        categories: ["digital-product", "dtc-startup", "consumer-tech"],
+        colour: "#E8E0D4"
+      },
+
+      // ── Grey (ThisisGrey) ──
+      {
+        studio: "Grey",
+        handle: "@thisisgrey",
+        title: "YouTube Brand Refresh",
+        desc: "Part of the Saffron team exploring digital language and graphical direction for YouTube's brand refresh — defining how the world's video platform expresses itself.",
+        categories: ["brand-identity", "digital-product", "consumer-tech"],
+        colour: "#FF0000"
+      },
+      {
+        studio: "Grey",
+        handle: "@thisisgrey",
+        title: "Virgin Media — Best Days",
+        desc: "An internal web initiative for Virgin Media designed to engage teams with the brand's values — creating space for celebrating big and small moments.",
+        categories: ["digital-product", "interactive"],
+        colour: "#ED1C24"
+      },
+      {
+        studio: "Grey",
+        handle: "@thisisgrey",
+        title: "LaCasaEncendida Digital",
+        desc: "Information architecture, UX and concept for Spain's prominent art and cultural centre — transforming a dysfunctional site into something that truly serves its users.",
+        categories: ["digital-product", "interactive", "brand-identity"],
+        colour: "#D4A853"
+      },
+
+      // ── Goodside Studio ──
+      {
+        studio: "Goodside Studio",
+        handle: "@goodside_studio",
+        title: "The Mind Company",
+        desc: "Strategy, naming, visual and verbal identity for The Mind Company (Elevate + Balance apps) — a delightfully colourful system stemming from an abstract brain logomark.",
+        categories: ["brand-identity", "consumer-tech", "digital-product"],
+        colour: "#FF6B35"
+      },
+      {
+        studio: "Goodside Studio",
+        handle: "@goodside_studio",
+        title: "Superorganism",
+        desc: "Brand identity for the first venture firm for biodiversity — inspired by the wonder of nature and the ambition of investing in startups that benefit the planet.",
+        categories: ["brand-identity", "dtc-startup"],
+        colour: "#2D5016"
+      },
+      {
+        studio: "Goodside Studio",
+        handle: "@goodside_studio",
+        title: "Storyworth Brand System",
+        desc: "New brand strategy and identity brought to life across web, product, advertising and packaging — for the service that turns family stories into keepsake books.",
+        categories: ["brand-identity", "packaging", "digital-product"],
+        colour: "#8B6914"
+      },
+
+      // ── Basement Studio ──
+      {
+        studio: "Basement Studio",
+        handle: "@basementstudio",
+        title: "Vercel Brand Partnership",
+        desc: "Long-standing creative partnership shaping Vercel's visual language — from brand identity and custom type to web experiences and IRL events. Performance meets craft.",
+        categories: ["brand-identity", "interactive", "consumer-tech"],
+        colour: "#000000"
+      },
+      {
+        studio: "Basement Studio",
+        handle: "@basementstudio",
+        title: "MrBeast Storefront",
+        desc: "A high-performance e-commerce storefront built for millions — as dynamic and engaging as a MrBeast video, selling out inventory while serving massive traffic.",
+        categories: ["interactive", "digital-product", "consumer-tech"],
+        colour: "#00B4D8"
+      },
+      {
+        studio: "Basement Studio",
+        handle: "@basementstudio",
+        title: "KidSuper World",
+        desc: "A unique 3D interactive experience blending art, technology and culture — elevating KidSuper's brand into a dynamic showcase that captivates and inspires.",
+        categories: ["interactive", "brand-identity"],
+        colour: "#E040FB"
+      },
+
+      // ── Studio Freight / Darkroom ──
+      {
+        studio: "Studio Freight — Darkroom",
+        handle: "@studiofreight",
+        title: "Lunchbox Interactive",
+        desc: "Immersive website for the restaurant tech platform — smooth animations, scroll-driven storytelling and an experience that sets a new bar for B2B SaaS sites.",
+        categories: ["interactive", "digital-product", "consumer-tech"],
+        colour: "#FF8C42"
+      },
+      {
+        studio: "Studio Freight — Darkroom",
+        handle: "@studiofreight",
+        title: "Atmos Sneaker Drops",
+        desc: "An immersive digital experience for the sneaker retailer showcasing product drops with bold motion and scroll-based interactions that match the energy of the culture.",
+        categories: ["interactive", "digital-product"],
+        colour: "#1E1E1E"
+      },
+      {
+        studio: "Studio Freight — Darkroom",
+        handle: "@studiofreight",
+        title: "Lenis — Open Source",
+        desc: "Created Lenis, the smooth scroll library now used across thousands of sites — an open-source tool that became an industry standard for web animation.",
+        categories: ["interactive", "digital-product", "consumer-tech"],
+        colour: "#333333"
+      },
+
+      // ── Alright Studio ──
+      {
+        studio: "Alright Studio",
+        handle: "@alright_studio",
+        title: "Fly By Jing",
+        desc: "Bold, culturally rich brand identity and packaging for the Sichuan chilli sauce — a standout DTC success story that brought Sichuan flavour to the mainstream.",
+        categories: ["brand-identity", "packaging", "food-bev", "dtc-startup"],
+        colour: "#C41E3A"
+      },
+      {
+        studio: "Alright Studio",
+        handle: "@alright_studio",
+        title: "Sweet Loren's Packaging",
+        desc: "Approachable, colourful brand and packaging for the better-for-you cookie dough — helping it stand out in the natural foods aisle with pure joy.",
+        categories: ["packaging", "brand-identity", "food-bev"],
+        colour: "#F7C948"
+      },
+      {
+        studio: "Alright Studio",
+        handle: "@alright_studio",
+        title: "Willa's Oat Milk",
+        desc: "Clean, distinctive brand identity and packaging for the barista-focused oat milk — designed to feel premium in cafes and on shelves alike.",
+        categories: ["packaging", "brand-identity", "food-bev", "dtc-startup"],
+        colour: "#F5E6CA"
+      },
+
+      // ── Studio Mast ──
+      {
+        studio: "Studio Mast",
+        handle: "@studiomast",
+        title: "Hu Kitchen Brand",
+        desc: "Minimalist, premium brand identity and packaging for the paleo chocolate and snack brand — positioning Hu as credible and ingredient-focused in a crowded market.",
+        categories: ["brand-identity", "packaging", "food-bev", "dtc-startup"],
+        colour: "#3E2723"
+      },
+      {
+        studio: "Studio Mast",
+        handle: "@studiomast",
+        title: "Daily Harvest",
+        desc: "Brand system for the frozen superfood brand — a fresh, modern look that broke category conventions and made frozen food feel aspirational.",
+        categories: ["brand-identity", "packaging", "food-bev", "dtc-startup"],
+        colour: "#388E3C"
+      },
+      {
+        studio: "Studio Mast",
+        handle: "@studiomast",
+        title: "sweetgreen Identity",
+        desc: "Brand work for the fast-casual chain — contributing to the visual identity and environmental design that made salads feel like a lifestyle, not a compromise.",
+        categories: ["brand-identity", "food-bev"],
+        colour: "#7CB342"
+      },
+
+      // ── Emmett Shine / Gin Lane ──
+      {
+        studio: "Emmett Shine — Gin Lane",
+        handle: "@emmettshine",
+        title: "Harry's Launch Brand",
+        desc: "Defined the brand identity and digital presence for Harry's at launch — helping shape the DTC men's grooming revolution with razor-sharp positioning.",
+        categories: ["brand-identity", "digital-product", "dtc-startup"],
+        colour: "#1565C0"
+      },
+      {
+        studio: "Emmett Shine — Gin Lane",
+        handle: "@emmettshine",
+        title: "Hims Brand & E-commerce",
+        desc: "Launch brand and e-commerce experience for the men's wellness company — normalising self-care for men through design that felt fresh, approachable and unashamed.",
+        categories: ["brand-identity", "digital-product", "dtc-startup"],
+        colour: "#E8D5B7"
+      },
+      {
+        studio: "Emmett Shine — Gin Lane",
+        handle: "@emmettshine",
+        title: "Recess CBD Identity",
+        desc: "Brand world for the CBD-infused sparkling water — the pastel dreamscape aesthetic that defined an entire wave of wellness-meets-design DTC brands.",
+        categories: ["brand-identity", "packaging", "food-bev", "dtc-startup"],
+        colour: "#E8B4CB"
+      },
+
+      // ── Off Menu (studio entry) ──
+      {
+        studio: "Off Menu",
+        handle: "@off__menu",
+        title: "Scale AI Go-to-Market",
+        desc: "Brand consultancy for high-growth companies changing the game — Off-Menu helped Scale AI craft narrative and go-to-market strategy with soul.",
+        categories: ["brand-identity", "consumer-tech", "dtc-startup"],
+        colour: "#4A148C"
+      },
+
+      // ── UN/UN Studio ──
+      {
+        studio: "UN/UN Studio",
+        handle: "@uns__nstudio",
+        title: "Culture-Forward Identities",
+        desc: "Brand identity and art direction for lifestyle and culture-adjacent brands — working at the intersection of visual systems and cultural relevance.",
+        categories: ["brand-identity"],
+        colour: "#37474F"
+      },
+
+      // ── Parker Studio ──
+      {
+        studio: "Parker Studio",
+        handle: "@parkerstudio",
+        title: "Consumer Brand Systems",
+        desc: "Brand identity and visual design for consumer-facing products — crafting cohesive systems that scale across digital and physical touchpoints.",
+        categories: ["brand-identity", "consumer-tech"],
+        colour: "#455A64"
+      },
+
+      // ── Little Plains ──
+      {
+        studio: "Little Plains",
+        handle: "@littleplainsxo",
+        title: "Intimate Brand Identities",
+        desc: "Thoughtful, human-scale brand work for emerging brands — bringing warmth and personality to identities that feel personal rather than corporate.",
+        categories: ["brand-identity", "dtc-startup"],
+        colour: "#8D6E63"
+      },
+
+      // ── Spacing Co ──
+      {
+        studio: "Spacing Co",
+        handle: "@spacingco",
+        title: "Type-Led Brand Systems",
+        desc: "Typographic and spatial brand systems for tech and culture brands — where precision in spacing becomes a design philosophy.",
+        categories: ["brand-identity", "consumer-tech"],
+        colour: "#263238"
+      },
+
+      // ── Pizza Boy Studio ──
+      {
+        studio: "Pizza Boy Studio",
+        handle: "@pizzaboy",
+        title: "Playful Visual Identities",
+        desc: "Bold, characterful brand work with an irreverent edge — bringing fun and personality to brands that refuse to take themselves too seriously.",
+        categories: ["brand-identity", "packaging"],
+        colour: "#E65100"
+      },
+
+      // ── Works Studio ──
+      {
+        studio: "Works Studio",
+        handle: "@worksdotstudio",
+        title: "Systematic Brand Design",
+        desc: "Clean, systematic approach to brand identity — building design systems that are as functional as they are beautiful.",
+        categories: ["brand-identity", "digital-product"],
+        colour: "#1A237E"
+      },
+
+      // ── Add More Studio ──
+      {
+        studio: "Add More Studio",
+        handle: "@addmore_studio",
+        title: "Brand & Digital Craft",
+        desc: "Meticulous brand and digital design for forward-thinking companies — where every detail is considered and nothing is gratuitous.",
+        categories: ["brand-identity", "digital-product", "interactive"],
+        colour: "#004D40"
+      },
+
+      // ── Peers Studio ──
+      {
+        studio: "Peers Studio",
+        handle: "peers.studio",
+        title: "Collaborative Brand Building",
+        desc: "Brand strategy and identity built through genuine collaboration — working as peers alongside founders to shape brands from the inside out.",
+        categories: ["brand-identity", "dtc-startup"],
+        colour: "#4E342E"
+      },
+
+      // ── Max Hofert Design ──
+      {
+        studio: "Max Hofert Design",
+        handle: "maxhofertdesign.com",
+        title: "Refined Visual Identity",
+        desc: "Considered, refined brand identity work — balancing restraint and expression to create visual languages that feel both timeless and contemporary.",
+        categories: ["brand-identity", "consumer-tech"],
+        colour: "#212121"
+      },
+    ];
+
+    // ── Render ──
+    const grid = document.getElementById('grid');
+    const filtersEl = document.getElementById('filters');
+
+    function renderCards(filter) {
+      grid.innerHTML = '';
+      const filtered = filter === 'all'
+        ? projects
+        : projects.filter(p => p.categories.includes(filter));
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<div class="empty-state">No projects in this category yet.</div>';
+        return;
+      }
+
+      filtered.forEach((p, i) => {
+        const textColour = isLight(p.colour) ? 'rgba(0,0,0,0.55)' : 'rgba(255,255,255,0.85)';
+        const card = document.createElement('article');
+        card.className = 'card';
+        card.style.animationDelay = `${i * 40}ms`;
+        card.innerHTML = `
+          <div class="card-image-wrap">
+            <div class="colour-block" style="background:${p.colour}; color:${textColour}">
+              ${p.studio.split('—')[0].trim()}
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-studio">${p.studio} &middot; ${p.handle}</div>
+            <h2 class="card-title">${p.title}</h2>
+            <p class="card-desc">${p.desc}</p>
+            <div class="card-tags">
+              ${p.categories.map(c => `<span class="tag">${categoryLabel(c)}</span>`).join('')}
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function categoryLabel(slug) {
+      const labels = {
+        'brand-identity': 'Brand Identity',
+        'digital-product': 'Digital Product',
+        'packaging': 'Packaging',
+        'consumer-tech': 'Consumer Tech',
+        'food-bev': 'Food & Beverage',
+        'dtc-startup': 'DTC & Startup',
+        'interactive': 'Interactive & Web',
+      };
+      return labels[slug] || slug;
+    }
+
+    function isLight(hex) {
+      const c = hex.replace('#', '');
+      const r = parseInt(c.substr(0, 2), 16);
+      const g = parseInt(c.substr(2, 2), 16);
+      const b = parseInt(c.substr(4, 2), 16);
+      return (r * 299 + g * 587 + b * 114) / 1000 > 160;
+    }
+
+    // ── Filter clicks ──
+    filtersEl.addEventListener('click', (e) => {
+      if (!e.target.classList.contains('filter-btn')) return;
+      filtersEl.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderCards(e.target.dataset.filter);
+    });
+
+    // ── Init ──
+    renderCards('all');
+  </script>
+</body>
+</html>
